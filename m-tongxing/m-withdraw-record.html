@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="renderer" content="webkit"> 
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/m-tx-page.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/fastclick.js"></script>
+  <style>
+          #oLeft{
+            width:200px;
+            height:550px;
+            background-color: #ccc;
+            left: -200px;
+            position:relative;
+            transition: transform 3s;
+            -moz-transition: -moz-transform 3s;
+            -webkit-transition: -webkit-transform 3s;
+            -o-transition: -o-transform 3s;
+        }
+        #oLeft:hover{
+            transform: translateX(200px);
+            -moz-transform: translateX(200px);
+            -webkit-transform: translateX(200px);
+            -o-transform: translateX(200px);
+        }
+        #oLeft>p{
+            text-align: center;
+            line-height: 550px;
+            font-size:20px;
+        }
+        #ibtn{
+            position: absolute;
+            width:30px;
+            height:60px;
+            background-color: #a00;
+            color:#fff;
+            line-height: 30px;
+            top: 245px;
+            left:200px;
+            border-radius:0 5px 5px 0;
+            text-align: center;
+            cursor: pointer;
+        }
+  </style>
+</head>
+<body>
+	<div class="wrap">
+        <header class="nav-com"></header>
+        <ul class="news-list">
+            <li><em></em><a href="m-tx-index.html" title="">账户信息</a></li>
+            <li><em></em><a href="m-my-assets.html" title="">我的资产</a></li>
+            <li><em></em><a href="m-add-record.html" title="">充值记录</a></li>
+            <li><em></em><a href="#" title=""  class="bg">提现记录</a></li>
+        </ul>
+    </div>
+    <div class="us-area">
+       <header class="nav-com clearfix"><div class="btn"></div> 提现记录</header> 
+         <div class="news-block">
+           <nav class="nav clearfix">
+                <a class="change-btn">今天</a>
+               <a>最近一周</a>
+               <a>最近一个月</a>
+               <a>最近三个月</a>
+            </nav>
+       </div>
+      <div class="news-block">
+        <ul class="list-water">
+          <li>提现单号：12345678</li>
+          <li>提现金额：￥<em>10001</em>    手续费：￥<strong>10000</strong></li>
+          <li><strong>申请时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>100000</em></p><h5 class="col-red">待审核</h5></li>
+        </ul>
+        <ul class="list-water">
+          <li>提现单号：12345678</li>
+          <li>提现金额：￥<em>10001</em>    手续费：￥<strong>10000</strong></li>
+          <li><strong>申请时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>10000000</em></p><h5 class="col-green">已通过</h5></li>
+
+        </ul>
+        <ul class="list-water">
+          <li>提现单号：12345678</li>
+          <li>提现金额：￥<em>10001</em>    手续费：￥<strong>10000</strong></li>
+          <li><strong>申请时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>10000000</em></p><h5 class="col-red">待审核</h5></li>
+        </ul>
+     </div>
+      <div class="mainboxbg"></div>
+    </div>
+        <div id="oLeft">
+        <p>侧边栏</p>
+        <div id="ibtn">
+            <p class="btn">分享</p>
+        </div>
+    </div>  
+    <script>
+    $(function() {    
+        FastClick.attach(document.body);});
+    </script>
+    <script>
+        $('.nav a').click(function(){
+        var index = $(this).index();
+        $.getJSON('../tab.json',function(data){
+            $('#tabConTit').html(data[index].tit);
+            $('#tabInf').html(data[index].con);
+        })
+        $(this).addClass('change-btn').siblings().removeClass('change-btn');
+    });
+    </script>
+    <script src="js/mainjs.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/MetaHandler.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/mobile-version.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

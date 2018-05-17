@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="renderer" content="webkit"> 
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/m-tx-page.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.js"></script>
+</head>
+<body>
+	 <div class="wrap">
+        <header class="nav-com"></header>
+        <ul class="news-list">
+            <li ><em></em><a href="m-tx-index.html" title="">账户信息</a></li>
+            <li><em></em><a href="m-my-assets.html" title="">我的资产</a></li>
+            <li><em></em><a href="" title="" class="bg">充值记录</a></li>
+            <li><em></em><a href="m-withdraw-record.html" title="">提现记录</a></li>
+        </ul>
+    </div>
+    <div class="us-area">
+      <header class="nav-com clearfix">
+        <div class="btn"></div> 
+        充值记录
+      </header> 
+      <div class="news-block">
+            <nav class="nav clearfix">
+                <a class="change-btn">今天</a>
+               <a>最近一周</a>
+               <a>最近一个月</a>
+               <a>最近三个月</a>
+            </nav>
+      </div>
+      <div class="news-block">
+        <ul class="list-water">
+          <li>充值单号：<strong>12345678</strong></li>
+          <li>支付方式：<strong>银行卡</strong></li>
+          <li><strong>创建时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>100ddddddddddd</em></p><h5 class="col-red">失败</h5></li>
+        </ul>
+        <ul class="list-water">
+          <li>充值单号：<strong>12345678</strong></li>
+          <li>支付方式：<strong>银行卡</strong></li>
+          <li><strong>创建时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>100ddddddddddd</em></p><h5 class="col-green">成功</h5></li>
+
+        </ul>
+        <ul class="list-water">
+          <li>充值单号：<strong>12345678</strong></li>
+          <li>支付方式：<strong>银行卡</strong></li>
+          <li><strong>创建时间：2016-12-10</strong></li>
+          <li class="ch-money"><p>￥<em>100ddddddddddd</em></p><h5 class="col-red">失败</h5></li>
+        </ul>
+      </div>
+      <div class="mainboxbg"></div>
+    </div>
+    <script>
+    $(function() {    
+        FastClick.attach(document.body);});
+    </script>
+    <script>
+        $('.nav a').click(function(){
+        var index = $(this).index();
+        $.getJSON('../tab.json',function(data){
+            $('#tabConTit').html(data[index].tit);
+            $('#tabInf').html(data[index].con);
+        })
+        $(this).addClass('change-btn').siblings().removeClass('change-btn');
+    });
+    </script>
+    <script src="js/mainjs.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/MetaHandler.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/mobile-version.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
