@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>排行榜</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+         <!-- 关闭数字和邮箱 识别-->
+        <meta name="format-detection"content="telephone=no, email=no" />
+        <meta name="MobileOptimized" content="320"><!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <meta name="x5-page-mode" content="app"><!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no"><!-- 适应移动端end -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/base.css" /> 
+        <script src="js/zepto.min.js" type="text/javascript"></script> 
+        <script src="js/touch.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <div class="wrap clearfix">
+            <header class="clearfix">
+                <article class="clearfix">
+                    <div class="active-state"><a href=""><img src="images/q_start.png" alt="" /></a></div>
+                    <a href=""><img src="images/reward_rule.png" alt="" /></a>
+                    <a href=""><img src="images/ranking.png" alt="" /></a>
+                </article>
+            </header>
+            <div class="new_sort clearfix">
+                <div class="info">
+                    <em></em>
+                    <dl>
+                        <dt>
+                            <!-- 用户头像 -->
+                           <img src="images/demoimg/100.png"  alt="" />
+                        </dt>
+                        <dd>
+                            <!--用户名  -->
+                            <h3>四元不经花狮吼功</h3>
+                            <div>
+                                <p>活动排名: <span>第12345名</span></p>
+                                <p>助力好友数: <span>15487452</span></p>
+                            </div>
+                            <div class="my-place">
+                                <p>我的最佳成绩: <span>01234567</span></p>
+                                <p>总成绩: <strong>969696996</strong></p>
+                            </div>
+                        </dd>
+                    </dl>
+                    <nav></nav>
+                </div>
+                <div class="players_admission clearfix">
+                    <!-- 暂无玩家排行数据 -->
+                    <!-- <div class="no-place">
+                        暂无玩家数据
+                    </div> -->
+                    <!-- 有玩家排行榜数据 -->
+                    <div class="different_chart  clearfix show">
+                             <div class="sort_user">
+                                 <div class="place">
+                                     <img src="images/place_frist.png" height="72" width="48" alt="" />
+                                 </div>
+                                 <dl>
+                                     <dt><img src="images/demoimg/100.png" height="600" width="600" alt="" /></dt>
+                                     <dd>
+                                         <p>热情的汉克斯热情</p>
+                                         <strong class="friends">5712</strong>
+                                         <span class="forefront">1301301</span>
+                                     </dd>
+                                 </dl>
+                             </div>
+                             <div class="sort_user">
+                                 <div class="place">
+                                     <img src="images/place_second.png" height="72" width="48" alt="" />
+                                 </div>
+                                 <dl>
+                                     <dt><img src="images/demoimg/100.png" height="600" width="600" alt="" /></dt>
+                                     <dd>
+                                         <p>热情的汉克斯</p>
+                                         <strong class="friends">865</strong>
+                                         <span class="forefront">130130</span>
+                                     </dd>
+                                 </dl>
+                             </div>
+                             <div class="sort_user">
+                                 <div class="place">
+                                     <img src="images/place_third.png" height="72" width="48" alt="" />
+                                 </div>
+                                 <dl>
+                                     <dt><img src="images/demoimg/100.png" height="600" width="600" alt="" /></dt>
+                                     <dd>
+                                         <p>热情的汉克斯</p>
+                                         <strong class="friends">5043</strong>
+                                         <span class=
+                                         "forefront">130</span>
+                                     </dd>
+                                 </dl>
+                             </div>
+                             <div class="sort_user">
+                                 <div class="place">
+                                    4
+                                 </div>
+                                 <dl>
+                                     <dt><img src="images/demoimg/100.png" height="600" width="600" alt="" /></dt>
+                                     <dd>
+                                         <p>热情的汉克斯</p>
+                                         <strong >5043</strong>
+                                         <span>130</span>
+                                     </dd>
+                                 </dl>
+                             </div>
+                    </div>     
+                </div>
+            </div>
+             <footer id="footer">
+                <p>5玩对战保留本活动最终解释权</p>
+            </footer>
+        </div>
+    <script type="text/javascript">
+    /**
+     * [initial description]布局自适应
+     * @return {[type]} [description]
+     */
+        function initial() {
+           var htmlEle = $("html");
+           var htmlWidth = htmlEle.width();
+           var scale = 320 / 40;
+           if (htmlWidth <= 320 ) {
+                htmlEle.css({
+                    "font-size ": "40px"
+                })
+           } 
+           else{
+                htmlEle.css({
+                    "font-size" : htmlWidth / scale + "px"
+                })
+           };
+        }
+        initial();
+        $(window).resize(initial); 
+    </script>
+    </body>
+</html>

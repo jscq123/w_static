@@ -1,0 +1,361 @@
+
+@charset"utf-8";
+html {
+    font-size: 80px;
+    background-color: #edd6ad;
+    -webkit-user-select:none;
+
+}
+body {
+    /*开启反锯齿*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wrap {
+    width: 8rem;
+    margin: 0 auto;
+}
+.wrap header {
+    position: relative;
+    width: 8rem;
+    background: url("../images/demoimg/banner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.wrap article {
+    width: 6.31rem;
+    margin: 0 auto;
+    padding: 5.3rem 0 0 0;
+}
+.wrap div.active-state {
+    float:right;
+    width:3.19rem;
+    height: 1.57rem;
+}
+.wrap div.active-state img{
+    display: block;
+    width:3.19rem;
+    height: 1.57rem;
+}
+.wrap article a {
+    float: left;
+    display: block;  
+    width: 2.2rem;
+    height: 0.66rem;
+    margin: 0.1rem 0 0.15rem 0;
+}
+.wrap article img {
+    float: left;
+    display: block;  
+    width: 2.2rem;
+    /*height: 0.66rem;*/
+    height:0.84rem;
+}
+.wrap .dif-chart {
+    height: 0.61rem;
+    margin-bottom: 0.05rem;
+}
+.wrap article p {
+    width: 8rem;
+    height: 0.61rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+    background: url("../images/time.png") no-repeat;
+    background-size: 100%;
+}
+.reward_charts {
+    width: 100%;
+    margin: 0 auto;
+}
+#tit {
+    display: block;
+    width: 100%;
+    height:1.89rem;
+}
+.reward_charts img {
+    display: block;
+    width: 100%;
+    height: 9.9rem;
+}
+.specification {
+    overflow: hidden;
+    width: 8rem;
+    /*padding-top: 0.1rem;*/
+    background-color: #edd6ad;
+} 
+#description {
+    display: block;
+    width: 100%;
+    height: 3.49rem;
+}
+.specification div {
+    margin-bottom: 0.4rem;
+}
+.specification div.rules-time {
+    margin-top: -2rem;
+}
+.specification h3 {
+    width: 7.6rem;
+    margin-bottom: 0.3rem;
+    padding-left:0.4rem;
+    line-height: 0.3rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color:#664b1c;
+}
+.specification p {
+    width: 6.8rem;
+    margin-left: 0.51rem;
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+    color: #8e703c;
+} 
+.specification p strong {
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    color: #b72317;
+}
+.wrap #footer {
+    width: 8rem;
+    height: 0.81rem;
+    background: #584024;
+    background-size: 100%;
+}
+.wrap #footer p {
+    text-align: center;
+    line-height: 0.81rem;
+    font-size: 0.3rem;
+    color:#ba9a71;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.players_admission {
+    width: 100%; 
+}
+.info {
+    width: 8rem;
+    height: 3.42rem;
+}
+.info em {
+    float: left;
+    width: 100%;
+    /*height: 0.8rem;*/
+    height: 1.89rem;
+    background:url(../images/place_title.png) no-repeat;
+    background-size: 100% 100%;
+}
+.info nav {
+    float: left;
+    width: 100%;
+    height: 0.76rem;
+    background:url(../images/place_sort.png) no-repeat;
+    background-size: 100% 100%;
+}
+.info dl {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0.3rem 0 0.2rem 0;
+}
+.info dl dt {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 1.29rem;
+    height: 1.33rem;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+    border: 0;
+    background:url(../images/user_image_big.png) no-repeat;
+    background-size: 100% 100%;
+}
+.info dl dt img {
+    position: absolute;
+    left: 0;
+    top: 0.005rem;
+    z-index: -1;
+    width: 1.29rem;
+    height: 1.28rem;
+    outline: none;
+    border: 0;
+}
+.info dl dd {
+    overflow: hidden;
+    float: left;
+    margin-left: 0.1rem;
+}
+.info div {
+    overflow: hidden;
+    float: left;
+    width:3.1rem;
+    height: 1.06rem;
+}
+.info div.my-place {
+    float: right;
+    width: 3.4rem;
+}
+.info dl dd h3 {
+    margin-bottom:0.1rem;
+    font-size:0.3rem;
+    color:#000;
+    background:none;
+}
+.info dl dd p {
+    font-size: 0.28rem;
+    height: 0.32rem;
+    line-height: 0.28rem;
+    color: #604725;
+    margin-bottom: 0.15rem;
+}
+.info dl dd span {
+    font-size: 0.24rem;
+    line-height: 0.28rem;
+    color: #d32300;
+}
+.info dl dd p strong{
+    font-size: 0.24rem;
+    line-height: 0.28rem;
+    color: #1260f0;
+}
+.sort_info {
+    float: left;
+    width: 3rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    border-left: 2px solid #530db8;
+}
+.sort_info p {
+    float: left;
+    margin-bottom: 0.2rem;
+    margin-left: 0.33rem;
+    font-size: 0.28rem;
+    color: #b7bacf;
+    letter-spacing: 0.08em;
+}
+.sort_info p span {
+    margin-left: 0.06rem;
+    font-size: 0.28rem;
+    color: #ffe400;
+}
+.new_sort {
+    width: 8rem; 
+} 
+.new_sort h2 {
+    width: 8rem;
+    height: 0.78rem;
+    background: url("../images/new_sort_bg1.png") no-repeat;
+    background-size: 100%;
+}
+.sort_user {
+    width: 7.8rem;
+    height: 1.54rem;
+    margin: 0 auto;
+    background:url(../images/place_bg.png) left bottom repeat-x;
+}
+.sort_user:nth-last-child(1) {
+    background:none;
+}
+.sort_user .place {
+    float: left;
+    width: 0.68rem;
+    height: 1.54rem;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 0.38rem;
+    color: #916527;
+}
+.sort_user .place img {
+    display: block;
+    width: 0.6rem;
+    height: 0.9rem;
+    margin-top: 0.15rem;
+    margin-left: 0.13rem;
+}
+.sort_user dl {
+    width: 100%;
+    height: 1.54rem;
+    margin-top: 0.28rem;
+}
+.sort_user dl dt {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 1.06rem;
+    height: 1.19rem;
+    margin-left: 0.33rem;
+    background: url("../images/user_image.png") no-repeat;
+    background-size: 100% 100%; 
+}
+.sort_user dl dt img {
+    position: absolute;
+    left: 0;
+    top: 0.006rem;
+    z-index: -1;
+    width: 1.06rem;
+    height: 1.15rem;
+    outline: none;
+    border: 0;
+}
+.sort_user dl dd {
+    float: left;
+    width: 5.5rem;
+    height: 1.54rem;
+    margin-left: 0.2rem;
+} 
+.sort_user dl dd p {
+    float: left;
+    overflow: hidden;
+    width: 2.65rem;
+    white-space: nowrap;
+    text-overflow: clip;
+    letter-spacing: 0.1em;
+    line-height: 1.25rem;
+    font-size: 0.3rem;
+    color: #604725;
+}
+.sort_user dl dd strong.friends {
+    font-size: 0.3rem;
+    color:#6279d3;
+    line-height: 1.25rem;
+}
+.sort_user dl dd strong {
+    float: left;
+    margin-left: 0.25rem;
+    font-size: 0.3rem;
+    color:#e74700;
+    line-height: 1.25rem;
+}
+.sort_user dl dd span {
+    float: right;
+    width: 1.2rem;
+    text-align: right;
+    margin-right: 0.2rem;
+    text-align: right;
+    line-height: 1.25rem;
+    font-size: 0.3rem;
+    color: #d32300;
+}
+.sort_user dl dd span.forefront {
+    color: #1260f0;
+}
+.different_chart {
+    display: none;
+    float: left;
+    width: 8rem;
+}
+.new_sort .show {
+    display: block;
+}
+/*无玩家排行数据*/
+.no-place {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}

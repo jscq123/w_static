@@ -1,0 +1,115 @@
+/* 
+* @Author: anchen
+* @Date:   2015-09-29 10:38:10
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-09-29 13:05:59
+*/
+@charset "utf-8";
+html {
+    font-size: 80px;
+    background:#3e0973;
+}
+.wrap {
+    position: absolute;
+    width: 100%;
+}
+#installBg {
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    bottom:0;
+    width: 100%;
+}
+#install {
+    position: absolute;
+    left: 50%;
+    width: 3.42rem;
+    height: 1.16rem; 
+    margin-left: -1.71rem;
+}
+#font {
+    position: absolute;
+    left: 50%;
+    width: 5.51rem;
+    height:0.47rem;
+    margin-left: -2.75rem;
+}
+#installCon {
+    position: absolute;
+    left:50%;
+    width: 7.2rem;
+    height: 3.01rem;
+    padding:0.5rem 0; 
+    margin-left: -3.6rem;
+    background:url(../images/install_con.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*内容滚动区*/
+.outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 3.01rem;
+}
+.inner {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    -webkit-animation:change 60s linear 0s infinite; 
+    -moz-animation:change 60s linear 0s infinite;
+    -ms-animation:change 60s linear 0s infinite;
+}  
+@-webkit-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+@-moz-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+@-ms-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+.inner p {
+    width: 80%;
+    margin: 0 auto 0.1rem;
+    font-size: 0.33rem;
+    line-height: 0.5rem;
+    color: #4df1f1;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.inner span {
+    font-size: 0.33rem;
+    line-height: 0.33rem;
+    color:#fff000;
+}  
+.inner strong {
+    font-size: 0.33rem;
+    line-height: 0.33rem;
+    color:#4df1f1;
+} 
+.inner em {
+    color:#ff0000;
+}

@@ -1,0 +1,120 @@
+/* 
+* @Author: anchen
+* @Date:   2015-10-14 09:04:09
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-10-14 10:38:31
+*/
+@charset "utf-8";
+html {
+    background-color:#410976;
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+}
+#installBg {
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    bottom:0;
+    width: 100%;
+}
+#install {
+    position: absolute;
+    left: 50%;
+    top: 527px;
+    width: 274px;
+    height:93px;
+    margin-left: -137px;
+}
+#font {
+    position: absolute;
+    left: 50%;
+    top: 661px;
+    width:419px;
+    height: 38px;
+    margin-left: -209.5px;
+}
+#installCon {
+    position: absolute;
+    left:50%;
+    top: 742px;
+    width:576px;
+    height: 321px;
+    margin-left: -288px;
+    padding: 20px 0;
+    background:url(../images/install_con.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*内容滚动区*/
+.outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 240px;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+.inner {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    -webkit-animation:change 50s linear 0s infinite; 
+    -moz-animation:change 50s linear 0s infinite;
+    -ms-animation:change 50s linear 0s infinite;
+}  
+@-webkit-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+@-moz-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+@-ms-keyframes change {
+    0%{
+        top: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-900px);
+        -moz-transform: translateY(-900px);
+        -ms-transform: translateY(-900px);
+    }
+}
+.inner p {
+    width: 80%;
+    margin: 0 auto 22px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #4df1f1;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.inner span {
+    font-size: 30px;
+    line-height: 30px;
+    color:#fff000;
+}  
+.inner strong {
+    font-size: 30px;
+    line-height: 30px;
+    color:#4df1f1;
+} 
+.inner em {
+    color:#ff0000;
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/MetaHandler.js" type="text/javascript"></script>
+    <script src="js/mobile-version.js" type="text/javascript"></script>
+
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-container2 {
+            position: absolute;
+            top:0;
+            left:0;
+            height:50%;
+            width:100%;
+        }
+        .swiper-container2 .swiper-slide img{width:100%;height:100%;}
+        .swiper-slide {
+            text-align: center;
+            font-size: 25px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+       
+        .ani {
+            position: absolute;
+        }
+
+        .a{
+            background-image: url(images/bg1.jpg) ;
+            background-size:100% 100%;
+        }
+        .b{
+            background-image: url(images/bg2.jpg) ;
+            background-size:100% 100%;
+        }
+        .arr{
+            position: fixed;
+            bottom:20px;
+            /*left:50%;*/
+            width:49px;
+            height:61px;
+            background:url(images/arr.png) no-repeat;
+            background-size: 100% 100%;
+            animation: arrow1 1.5s infinite ease-in-out both;
+        }
+        @-webkit-keyframes arrow1 {
+
+            0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+
+            60% {opacity: 1;-webkit-transform: translate(0,0);}
+
+            100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+
+        }
+        @keyframes arrow1 {
+
+            0%,30% {opacity: 0;transform: translate(0,10px);}
+
+            60% {opacity: 1;transform: translate(0,0);}
+
+            100% {opacity: 0;transform: translate(0,-8px);}
+
+        }
+        @-webkit-keyframes upTop {
+            0%{transform:translate(0,0);}
+            100%{transform:translate(0,-100px);font-size:40px; color:red;}
+        }
+        @keyframes upTop {
+            0%{transform:translate(0,0);}
+            100%{transform:translate(0,-100px);font-size:40px;color:red;}
+        }
+        .upTop {
+            -webkit-animation-name: upTop;
+            animation-name: upTop;
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide a">
+
+            <div class="ani "
+                 data-slide-in="at 500 from bounceInDown use swing during 500"
+                 data-slide-out="at 0 to fadeOutRight use swing during 1500 force"
+                 style="top: 50px; left: 20px; width: auto; height: auto;">内容1
+            </div>
+            <div class="ani "
+                 data-slide-in="at 500 from bounceInDown use swing during 500"
+                 data-slide-out="at 0 to upTop use swing during 1500 force"
+                 style="top: 150px; left: 60px; width: auto; height: auto;color:yellow">内容3
+            </div>
+            <div class="ani "
+                 data-slide-in="at 600 from fadeInUpBig use swing during 1500"
+                 style="top: 172.8px; left: 120.8px; width: 100px; height: auto;border:3px solid red;">【消防水枪的另一种打开方式[群体围观]】一名男子爬到电子眼上，摇摇晃晃，又僵持了很久，现场情况十分危急，消防官兵在地上铺设救生气垫，趁其不备用水枪给打了下来，男子成功获救！
+            </div>
+            <img src="images/content.png"  alt="" class="ani" style="top:20px;left:200px;width: auto; height: auto;" data-slide-in="at 300 from bounceInRight use swing during 1500"/>
+            <div class="arr ani"></div>
+        </div>
+        <div class="swiper-slide b">
+            <div class="ani "
+                 data-slide-in="at 500 from bounceInRight use swing during 500"
+                 style="top: 50px; left: 100px; width: auto; height: auto;">内容3
+            </div>
+            <div class="ani "
+                 data-slide-in="at 100 from zoomInLeft use swing during 500"
+                 style="top: 150px; left: 50px; width: auto; height: auto;color:red;">尴尬: iPhone SE发售日苹果零售店门前冷清
+            </div>
+            <img src="images/im3.png"  alt="" class="ani " style="top:200px;left:40px;width:40%; height: auto;" data-slide-in="at 300 from fadeInDownBig use swing during 1500"/>
+            <div class="arr ani"></div>
+            <img src="images/im4.png"  alt="" class="ani " style="bottom:200px;right:10px;width:20%; height: auto;" data-slide-in="at 500 from bounceInRight use swing during 1500"/>
+            <div class="arr ani"></div>
+        </div>
+        <div class="swiper-slide c">
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="images/bg3.jpg"> </div>
+                    <div class="swiper-slide"> <img src="images/bg4.jpg"> </div>
+                    <div class="swiper-slide">
+                      <div class="content-slide">
+                        <p class="title">Slide with HTML</p>
+                        <p>You can put any HTML inside of slide with any layout, not only images, even another Swiper!</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+<script>
+
+    var mySwiper = new Swiper('.swiper-container', {
+        direction : 'vertical',
+        onInit: function (swiper) {
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function (swiper) {
+            swiperAnimate(swiper);
+        },
+        onTransitionEnd: function (swiper) {
+            swiperAnimate(swiper);
+        }
+
+
+    })
+
+    var Swiper = new Swiper('.swiper-container2',{
+        pagination: '.pagination',
+        autoplay:3000,
+        paginationClickable: true,
+        loop:true,
+        grabCursor: true,
+        autoplayDisableOnInteraction : false
+    })
+</script>
+
+</body>
+</html>

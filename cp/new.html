@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泰来云</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="css/new.css" >
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/MetaHandler.js" type="text/javascript"></script>
+    <script src="js/mobile-version.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+        $(function(){
+            $(".music").click(function(){
+
+                if($(".icon-music").attr("num") == "1"){
+                    $(".icon-music").removeClass("open");
+                    $(".icon-music").attr("num","2")
+                    document.getElementById("aud").pause();
+                }else{
+                    $(".icon-music").attr("num","1");
+                    $(".icon-music").addClass("open");
+                    document.getElementById("aud").play();
+                }
+
+          });
+        })
+    </script>
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <!-- <div class="music">
+        <i class="icon-music open" num="1"></i>
+        <audio id="aud" src="http://res1.eqh5.com/3d6cee2a7073414a85314809f9152879.mp3"  loop="loop" autoplay="autoplay"></audio>
+    </div> -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 第一屏 -->
+            <!-- <div class="swiper-slide first-screen">
+              
+                <img src="img/01/logo.png" height="63" width="288" alt="" class="ani logo" data-slide-in="at 300 from flipInY use swing during 1000" />
+                <img src="img/01/tit_01.png" height="186" width="600" alt=""  class="ani tit_01" data-slide-in="at 600 from twisterInDown use ease  during 2000"/>
+
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>  --> 
+            <!--第二屏-->
+            <!-- <div class="swiper-slide second-screen">
+
+                <img src="img/02/tit_01.png" height="185" width="588" alt="" class="ani tit_01" data-slide-in="at 100 from twisterInUp use swing  during 2000"/>
+
+                <img src="img/02/tit_02.png" height="155" width="577" alt="" class="ani tit_02" data-slide-in="at 1200 from puffIn use swing  during 1500"/>
+
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第三屏-->
+            <!-- <div class="swiper-slide third-screen">
+                <img src="img/03/tit_01.png" height="129" width="513" alt="" class="ani tit_01" data-slide-in="at 100 from lightSpeedIn use swing  during 1500"/>
+                <img src="img/03/tit_02.png" height="191" width="572" alt="" class="ani tit_02" data-slide-in="at 800 from twisterInUp use swing during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第四屏-->
+            <!-- <div class="swiper-slide four-screen">
+                <img src="img/04/tit_01.png" height="129" width="548" alt="" class="ani tit_01" data-slide-in="at 100 from bounceInLeft use ease  during 1500"/>
+                <img src="img/04/tit_02.png" height="180" width="609" alt="" class="ani tit_02" data-slide-in="at 800 from bounceInRight use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第五屏-->
+            <!-- <div class="swiper-slide five-screen">
+                <img src="img/05/tit_01.png" height="134" width="536" alt="" class="ani tit_01" data-slide-in="at 100 from bounceIn use ease  during 1500"/>
+                <img src="img/05/tit_02.png" height="214" width="598" alt="" class="ani tit_02" data-slide-in="at 800 from bounceIn use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第六屏-->
+            <div class="swiper-slide six-screen">
+                <img src="img/06/tit_01.png" height="339" width="615" alt="" class="ani tit_01" data-slide-in="at 100 from slideInRight use ease  during 1200" />
+                <img src="img/06/tit_02.png" height="379" width="587" alt="" class="ani tit_02" data-slide-in="at 800 from slideInLeft use ease during 1600"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>
+            <!--第七屏-->
+            <div class="swiper-slide seven-screen">
+                <div id="ydo1" class="ani" data-slide-in="at 500 from bounceInLeft use ease during 600"></div>
+                <img src="img/07/tit_01.png" height="58" width="283" alt="" class="ani tit_01" data-slide-in="at 100 from zoomIn use ease during 800"/>
+                <div class="ani text-show">
+                    <div id="inner">
+                        <span id="introput"></span>
+                        <span id="introput2" style="color:yellow"></span>
+                        <span id="introput3"></span>
+                    </div>
+                </div>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>
+            <!--第八屏-->
+            <!-- <div class="swiper-slide eight-screen com-bg">
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01" />
+                <span class="ani tit" data-slide-in="at 100 from zoomIn use swing during 500">1.独立商城系统</span>
+                <img src="img/down.png" height="51" width="32" alt="" class="ani down" data-slide-in="at 200 from fadeIn use swing during 2000"/>
+
+                <img src="img/08/show_01.png" height="741" width="258" alt="" class="ani show_01" data-slide-in="at 100 from bounceInLeft use swing during 2000"/>
+                <img src="img/08/show_02.png" height="757" width="292" alt="" class="ani show_02" data-slide-in="at 2000 from bounceIn use swing during 1000"/>
+                <img src="img/08/show_03.png" height="741" width="258" alt="" class="ani show_03" data-slide-in="at 2200 from bounceInRight swing ease  during 2000">
+
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第九屏-->
+            <!-- <div class="swiper-slide nice-screen com-bg">
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01" />
+                <span class="ani tit" data-slide-in="at 100 from zoomIn use swing during 500">2.自助扫描点单</span>
+                <img src="img/down.png" height="51" width="32" alt="" class="ani down" data-slide-in="at 200 from fadeIn use swing during 2000"/>
+                
+                <img src="img/09/show_01.png" height="741" width="258" alt="" class="ani show_01" data-slide-in="at 100 from bounceInLeft use swing during 2000"/>
+                <img src="img/09/show_02.png" height="757" width="292" alt="" class="ani show_02" data-slide-in="at 2000 from bounceIn use swing during 1000"/>
+                <img src="img/09/show_03.png" height="741" width="258" alt="" class="ani show_03" data-slide-in="at 2500 from bounceInRight swing ease  during 2000">
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第十屏-->
+            <!-- <div class="swiper-slide ten-screen com-bg">
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01" />
+                <span class="ani tit" data-slide-in="at 100 from zoomIn use swing during 500">3.微信广告植入</span>
+                <img src="img/down.png" height="51" width="32" alt="" class="ani down" data-slide-in="at 200 from fadeIn use swing during 2000"/>
+                
+                <img src="img/10/show_01.png" height="725" width="292" alt="" class="ani show_01" data-slide-in="at 100 from bounceInLeft use swing during 2000"/>
+                <img src="img/10/show_02.png" height="736" width="292"  alt="" class="ani show_02" data-slide-in="at 1200 from bounceInLeft use swing during 2000"/>
+                <img src="img/10/show_03.png" height="748" width="292" alt="" class="ani show_03" data-slide-in="at 2000 from bounceInLeft swing ease  during 2000">
+
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第十一屏-->
+            <!-- <div class="swiper-slide eleven-screen com-bg">
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01"  />
+                <span class="ani tit" data-slide-in="at 100 from zoomIn use swing during 500">4.一键众推系统</span>
+                <img src="img/down.png" height="51" width="32" alt="" class="ani down" data-slide-in="at 400 from fadeIn use swing during 2000"/>
+
+                <img src="img/11/show_01.png"  height="732" width="275" alt="" class="ani show_01" data-slide-in="at 100 from bounceInRight use swing during 2000"/>
+                <img src="img/11/show_02.png" height="732" width="275" alt="" class="ani show_02" data-slide-in="at 800 from bounceInRight use swing during 2000"/>
+                <img src="img/11/show_03.png" height="732" width="275" alt="" class="ani show_03" data-slide-in="at 1200 from bounceInRight use swing during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第十二屏-->
+            <!-- <div class="swiper-slide twl-screen com-bg"> 
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01"  />
+                <span class="ani tit" data-slide-in="at 100 from zoomIn use swing during 500">5.其他功能</span>
+                <p class="ani tit_02" data-slide-in="at 100 from zoomIn use swing during 500">
+                    虚拟卡券、多种功能二维码应用、客户管理系统、导航、自媒体编辑等
+                </p>
+                <img src="img/down.png" height="51" width="32" alt="" class="ani down" data-slide-in="at 200 from fadeIn use swing during 2000"/>
+
+                <img src="img/12/H529.png" height="689" width="256" alt="" class="ani show_01" data-slide-in="at 100 from twisterInUp use ease during 2000"/>
+                <img src="img/12/H530.png" height="675" width="255" alt="" class="ani show_02" data-slide-in="at 1800 from twisterInUp use ease during 2000"/>
+                <img src="img/12/H531.png" height="665" width="255" alt="" class="ani show_03" data-slide-in="at 2800 from twisterInUp use ease during 2000"/>
+                <img src="img/12/H532.png" height="675" width="255" alt="" class="ani show_04" data-slide-in="at 3800 from twisterInUp use ease during 2000"/>
+                <img src="img/12/H533.png" height="689" width="256" alt="" class="ani show_05" data-slide-in="at 4800 from twisterInUp use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>  -->
+            <!--第十三屏-->
+            <!-- <div class="swiper-slide thirteenth-screen" >
+                <img src="img/tit_01.png" height="58" width="321" alt="" class="ani tit_01" />
+                <span class="ani txt" data-slide-in="at 100 from fadeInRightBig use swing during 1000">零售行业</span>
+                <img src="img/13/show_01.png" height="649" width="572" alt="" class="ani show_01" data-slide-in="at 800 from bounceIn use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第十四屏 -->
+            <!-- <div class="swiper-slide fourteenth-screen" >
+                <span class="ani txt" data-slide-in="at 100 from fadeInRightBig use swing during 1000">服务行业</span>
+                <img src="img/14/show_01.png" height="803" width="572" alt="" class="ani show_01" data-slide-in="at 800 from bounceIn use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div> -->
+            <!--第十五屏-->
+            <div class="swiper-slide fifteenth-screen" >
+                <img src="img/15/tit_01.png" height="58" width="321" alt="" class="ani tit_01" />
+                <img src="img/15/H538.png" height="828" width="257" alt="" class="ani show_01" data-slide-in="at 100 from twisterInDown use ease during 2000"/>
+                <img src="img/15/H539.png" height="808" width="257" alt="" class="ani show_02" data-slide-in="at 1200 from twisterInDown use ease during 2000"/>
+                <img src="img/15/H540.png" height="828" width="257" alt="" class="ani show_03" data-slide-in="at 2200 from twisterInDown use ease during 2000"/>
+                <img src="img/15/H543.png" height="794" width="257" alt="" class="ani show_06" data-slide-in="at 3200 from twisterInDown use ease during 2000"/>
+                <img src="img/15/H544.png" height="794" width="257" alt="" class="ani show_07" data-slide-in="at 4200 from twisterInDown use ease during 2000"/>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>
+            <!--第十六屏-->
+            <div class="swiper-slide sixteenth-screen" >
+                <p class="ani txt2" data-slide-in="at 200 from bounceInLeft use ease during 1200" >
+                    <span>加入泰来云</span>
+                    <span>就差一个电话！</span>
+                </p>
+                <p class="bar ani"></p>
+
+                <div id="ydo2" class="ani" data-slide-in="at 500 from bounceInLeft use ease during 600"></div>
+
+                <p class="ani contacts  info" id="output"></p>
+                <span class="ani info join" id="output2"></span>
+                <span class="ani info tel" id="output3"></span>
+                <p class="ani address info" id="output4"></p>
+
+                <a href="" class="ani contact-us">
+                    <img src="img/16/H541.png" height="78" width="263" alt=""  />
+                </a>
+                <div class="ani arr" data-slide-in="at 200 from start use ease  during 2000"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var flag=null;
+        var retvaljie = 1;
+        var retvalLast = 1;
+        var mySwiper = new Swiper(' .swiper-container', {
+            direction: 'vertical',
+            keyboardControl : true,
+            onInit: function (swiper) {
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function (swiper) {
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function (swiper) {
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd:function(swiper){
+                //简介
+                var aniDiv = $("#ydo1");
+                var animationDiv = $("#ydo2");
+                aniDiv.bind("webkitAnimationEnd", function() {
+                    //alert(1);
+                    var ocontent=document.getElementById("introput");
+                    var ocontent2=document.getElementById("introput2");
+                    var ocontent3=document.getElementById("introput3");
+                    var str1="泰来云信息科技有限公司，是国内独创";
+                    var str2="“ O2O系统+智能运营+资讯裂变推广 ”";
+                    var str3="的服务提供商，为中小微企业提供从创建商城到互动引流的营销、咨询、传播、推广等一站式落地服务，创新地解决企业高成本运营、用户断层流失、商户互动缺失等问题，致力于为传统中小企业突破建立O2O系统的瓶颈和短板，为中小微企业提供了低成本、轻应用、智能运营的移动电商解决方案，是目前国内唯一针对中小微型企业一站式营销推广的移动电商服务平台。";
+                    var i=0;
+                    var j = 0;
+                    var m = 0;
+                    var flag=null;//定时器的变量
+                    var iscmp = 0;
+
+                    if (retvaljie==1) {
+                        // $('#output').show();
+                        $('#introput2').hide();
+                        $('#introput3').hide();
+                        $('#introput4').hide();
+                        clearInterval(flag);
+                        function done(){ 
+                            
+                            //console.log(i);
+                            if(iscmp==0){//未执行或文字已执行完，则从头开始执行
+                               $('#introput').show();
+                                if (i<str1.length) {
+                                   ocontent.innerHTML=str1.substring(0,i+1);
+                                    i=i+1; 
+                                    retvaljie=0;
+                                }else if (j<str2.length) {
+                                    $('#introput2').show();
+                                    ocontent2.innerHTML=str2.substring(0,j+1);
+                                    j=j+1; 
+                                    retvaljie=0;
+                                    $('#introput3').hide();
+                                }else if (m<str3.length) {
+                                    $('#introput3').show();
+                                    ocontent3.innerHTML=str3.substring(0,m+1);
+                                    m=m+1; 
+                                    retvaljie =0;
+                                }else {
+                                    iscmp = 1;
+                                    retvaljie =1;
+                                    clearInterval(flag);
+                                }
+                                
+                               // console.log(i+"未完成");
+                            } 
+                        }
+                        flag=setInterval(done,160);
+                    }
+
+                })  
+                //加盟热线
+                var animationDiv = $("#ydo2");
+                animationDiv.bind("webkitAnimationEnd", function() {
+                    //alert(1);
+                    var ocontent=document.getElementById("output");
+                    var ocontent2=document.getElementById("output2");
+                    var ocontent3=document.getElementById("output3");
+                    var ocontent4=document.getElementById("output4");
+                    var str1="联系人：林经理";
+                    var str2="加盟热线：";
+                    var str3="13616040783";
+                    var str4="地址：厦门市软件园二期望海路17号";
+                    var i=0;
+                    var j = 0;
+                    var m = 0;
+                    var f = 0;
+                    var flag=null;//定时器的变量
+                    var iscmp = 0;
+
+                    if (retvalLast==1) {
+                        $('#output2').hide();
+                        $('#output3').hide();
+                        $('#output4').hide();
+                        clearInterval(flag);
+                        function done(){ 
+                            if(iscmp==0){//未执行或文字已执行完，则从头开始执行
+                               $('#output').show();
+                                if (i<str1.length) {
+                                   ocontent.innerHTML=str1.substring(0,i+1);
+                                    i=i+1; 
+                                    retvalLast=0;
+                                }else if (j<str2.length) {
+                                    $('#output2').show();
+                                    ocontent2.innerHTML=str2.substring(0,j+1);
+                                    j=j+1; 
+                                    retvalLast=0;
+                                    //$('#output3').hide();
+                                }else if (m<str3.length) {
+                                    $('#output3').show();
+                                    ocontent3.innerHTML=str3.substring(0,m+1);
+                                    m=m+1; 
+                                    retvalLast =0;
+                                }else if(f<str4.length){
+                                    $('#output4').show();
+                                    ocontent4.innerHTML=str4.substring(0,f+1);
+                                    f=f+1; 
+                                    retvalLast =0;
+                                }else {
+                                    iscmp = 1;
+                                    retvalLast =1;
+                                    clearInterval(flag);
+                                }
+                                
+                               // console.log(i+"未完成");
+                            } 
+                        }
+                        flag=setInterval(done,160);
+                    }
+
+                })        
+            },             
+        })        
+        
+</script>
+</body>
+</html>

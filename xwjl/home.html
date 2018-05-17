@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>首页</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+         <!-- 关闭数字和邮箱 识别-->
+        <meta name="format-detection"content="email=no" />
+        <meta name="format-detection"content="telephone=no" />
+        <!-- 启用webapp -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+        <meta name="HandheldFriendly" content="true"><!-- 微软的老式浏览器 -->
+        <meta name="MobileOptimized" content="320"><!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait"><!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait"><!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes"><!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true"><!-- UC应用模式 -->
+        <meta name="browsermode" content="application"><!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app"><!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no"><!-- 适应移动端end -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <script src="js/zepto.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="wrap clearfix">
+            <header class="clearfix">
+                <article class="clearfix">
+                    <div class="active-state"><a href=""><img src="images/q_start.png" alt="" /></a></div>
+                    <a href=""><img src="images/reward_rule.png" alt="" /></a>
+                    <a href=""><img src="images/ranking.png" alt="" /></a>
+                </article>
+            </header>
+            <div class="reward_charts clearfix">
+                <img src="images/1.png" alt="" id="tit"/>
+                <img src="images/demoimg/charts_daily.png" height="754" width="587" alt="" />
+            </div>
+            <div class="specification clearfix">
+                <img src="images/description.png" alt="" id="description"/>
+                <div class="rules-time">
+                    <h3>活动时间：</h3>
+                    <p>1、<strong>2015年10月15日~10月29日</strong> , 为期15天。</p>
+                    <p>2、玩家参加“大冒险”活动，可进行分数排名并获得红包奖励。</p>
+                    <p>
+                        3、玩家可以通过<strong>分享召唤您的好友进行助力</strong>，好友的成绩将记录到您的总成绩中。
+                    </p>
+                </div>
+                <div class="reward">
+                    <h3>排名算法及奖励：</h3>
+                    <p>1、<strong>玩家总成绩</strong> = 玩家自己的最佳成绩 + 接力的每个好友的最佳成绩。</p>
+                    <p>2、活动结束时按每个玩家的总分进行排行奖励。</p>
+                </div>
+                
+            </div>
+            <footer id="footer">
+                <p>5玩对战保留本活动最终解释权</p>
+            </footer>
+        </div>
+        <script type="text/javascript">
+        /**
+         *  布局自适应
+         * @return {[type]} [description]
+         */
+            function initial() {
+                   var htmlEle = $("html");
+                   var htmlWidth = htmlEle.width();
+                   var scale = 320 / 40;
+                   if (htmlWidth <= 320 ) {
+                        htmlEle.css({
+                            "font-size ": "40px"
+                        })
+                   } 
+                   else{
+                        htmlEle.css({
+                            "font-size" : htmlWidth / scale + "px"
+                        })
+                   };
+            }
+          initial();
+          $(window).resize(initial); 
+        </script>
+    </body>
+</html>
